@@ -14,7 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet var myLabel: UILabel!
     
     @IBAction func buttonPress(_ sender: Any) {
-        
+        /*
         buttonCount += 1
         view.backgroundColor = UIColor.blue
         myLabel.text = "You did this yourself."
@@ -24,6 +24,7 @@ class ViewController: UIViewController {
             // This changes the label
             myLabel.text = "You used a if statement."
         }
+        */
     }
     override func viewDidLoad() {
         super.viewDidLoad()
