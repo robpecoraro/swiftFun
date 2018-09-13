@@ -9,11 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
     var buttonCount = 0
+    
     @IBOutlet var myLabel: UILabel!
     
     @IBAction func buttonPress(_ sender: Any) {
+        
         buttonCount += 1
         view.backgroundColor = UIColor.blue
         myLabel.text = "You did this yourself."
