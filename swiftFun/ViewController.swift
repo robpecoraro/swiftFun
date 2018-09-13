@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         if buttonCount >= 10 {
             // This changes the back ground.
             view.backgroundColor = UIColor.red
+            // This changes the label
             myLabel.text = "You used a if statement."
         }
     }
