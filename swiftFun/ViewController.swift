@@ -11,9 +11,16 @@ import UIKit
 class ViewController: UIViewController {
     var buttonCount = 0
     
+    @IBOutlet weak var upperTextBox: UITextField!
     @IBOutlet var myLabel: UILabel!
+    @IBOutlet weak var lowerTextBox: UITextField!
     
     @IBAction func buttonPress(_ sender: Any) {
+       let sum = Int(upperTextBox.text!)! + Int(lowerTextBox.text!)!
+        
+        myLabel.text = String(sum)
+        
+        
         /*
         buttonCount += 1
         view.backgroundColor = UIColor.blue
