@@ -11,14 +11,14 @@ import UIKit
 class ViewController: UIViewController {
     var buttonCount = 0
     
-    @IBOutlet weak var upperTextBox: UITextField!
+    @IBOutlet var upperTextBox: UITextField!
     @IBOutlet var myLabel: UILabel!
-    @IBOutlet weak var lowerTextBox: UITextField!
+    @IBOutlet var lowerTextBox: UITextField!
     
     @IBAction func buttonPress(_ sender: Any) {
        let sum = Int(upperTextBox.text!)! + Int(lowerTextBox.text!)!
         
-        myLabel.text = String(sum)
+        myLabel.text = "\(upperTextBox.text!) + \(lowerTextBox.text!) = \(sum)"
         
         
         /*
