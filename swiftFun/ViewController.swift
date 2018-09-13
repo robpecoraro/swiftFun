@@ -9,7 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    var buttonCount = 0
+    @IBOutlet var myLabel: UILabel!
+    
+    @IBAction func buttonPress(_ sender: Any) {
+        buttonCount += 1
+        view.backgroundColor = UIColor.blue
+        myLabel.text = "You did this yourself."
+        if buttonCount >= 10 {
+            view.backgroundColor = UIColor.red
+            myLabel.text = "You used a if statement."
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
